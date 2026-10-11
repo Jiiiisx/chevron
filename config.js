@@ -227,34 +227,6 @@ window.CONFIG = {
       pinned: true
     },
     {
-      category: 'Social',
-      name: 'Twitter',
-      icon: 'twitter',
-      url: 'https://twitter.com',
-      normalisedURL: 'twitter.com',
-      triggers: [
-        'tt',
-        'twt',
-        'twit',
-        'twitt',
-        'twitter'
-      ],
-      commands: {
-        search: {
-          template: '{@}/search?q={$}'
-        },
-        go: {
-          template: '{@}/{$}'
-        }
-      },
-      bgColor: {
-        type: 'solid',
-        color: '#1c99e6'
-      },
-      textColor: '#e8e8e8',
-      pinned: true
-    },
-    {
       category: 'Work',
       name: 'Linkedin',
       icon: 'linkedin',
@@ -327,28 +299,6 @@ window.CONFIG = {
         colors: ['#2684fc', '#00ac47', '#ffba00']
       },
       textColor: '#fff',
-      pinned: true
-    },
-    {
-      category: 'Shopping',
-      name: 'Amazon',
-      triggers: [
-        'a',
-        'am',
-        'amz',
-        'amazon',
-      ],
-      icon: 'amazon',
-      key: 'KeyA',
-      url: 'https://www.amazon.com/',
-      normalisedURL: 'amazon.com',
-      bgColor: {
-        type: 'gradient',
-        gradientType: 'linear',
-        colors: ['#f29100', '#fff'],
-        stops: [0, 80]
-      },
-      textColor: '#000',
       pinned: true
     },
     {
