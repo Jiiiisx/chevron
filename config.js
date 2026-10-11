@@ -29,6 +29,24 @@ window.CONFIG = {
       pinned: true
     },
     {
+      category: 'Programming',
+      name: 'Gemini',
+      icon: 'gemini',
+      url: 'https://gemini.google.com',
+      normalisedURL: 'gemini.google.com',
+      triggers: [
+        'gem',
+        'gemini'
+      ],
+      bgColor: {
+        type: 'gradient',
+        gradientType: 'linear',
+        colors: ['#1a73e8', '#9c27b0']
+      },
+      textColor: '#fff',
+      pinned: true
+    },
+    {
       category: 'Communication',
       name: 'WhatsApp',
       icon: 'whatsApp',
