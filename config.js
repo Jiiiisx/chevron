@@ -30,35 +30,6 @@ window.CONFIG = {
     },
     {
       category: 'Communication',
-      name: 'Telegram',
-      icon: 'telegram',
-      url: 'http://t.me',
-      normalisedURL: 't.me',
-      triggers: [
-        'm',
-        'tm',
-        'tg',
-        'teleg',
-        'telega',
-        'telegram'
-      ],
-      key: 'KeyM',
-      commands: {
-        go: {
-          template: '{@}/{$}'
-        }
-      },
-      bgColor: {
-        type: 'gradient',
-        gradientType: 'radial',
-        colors: ['#29aaed', '#25a4e2'],
-        stops: [40, 100]
-      },
-      textColor: '#fff',
-      pinned: true
-    },
-    {
-      category: 'Communication',
       name: 'WhatsApp',
       icon: 'whatsApp',
       url: 'https://web.whatsapp.com',
@@ -75,36 +46,6 @@ window.CONFIG = {
         gradientType: 'linear',
         angle: 45,
         colors: ['#26d347', '#58f879']
-      },
-      textColor: '#fff',
-      pinned: true
-    },
-    {
-      category: 'Social',
-      name: 'Reddit',
-      triggers: [
-        'r',
-        'rd',
-        'reddit',
-      ],
-      key: 'KeyR',
-      icon: 'reddit',
-      url: 'https://reddit.com',
-      normalisedURL: 'reddit.com',
-      commands: {
-        go: {
-          template: '{@}/r/{$}',
-          description: 'go to subreddit'
-        },
-        search: {
-          template: '{@}/search?q={$}'
-        }
-      },
-      bgColor: {
-        type: 'gradient',
-        gradientType: 'linear',
-        colors: ['#f07e23', '#f74300'],
-        stops: [0, 100]
       },
       textColor: '#fff',
       pinned: true
@@ -135,38 +76,6 @@ window.CONFIG = {
         color: '#171515'
       },
       textColor: '#e8e8e8',
-      pinned: true
-    },
-    {
-      category: 'Programming',
-      name: 'StackOverflow',
-      icon: 'stackoverflow',
-      url: 'https://stackoverflow.com',
-      normalisedURL: 'stackoverflow.com',
-      triggers: [
-        's',
-        'st',
-        'so',
-        'stack',
-        'stackoverflow'
-      ],
-      key: 'KeyS',
-      commands: {
-        search: {
-          template: '{@}/search?q={$}'
-        },
-        go: {
-          template: '{@}/questions/{$}',
-          description: 'go to question'
-        }
-      },
-      bgColor: {
-        type: 'gradient',
-        gradientType: 'linear',
-        colors: ['#e87922', '#ffbe25'],
-        stops: [0, 100]
-      },
-      textColor: '#212121',
       pinned: true
     },
     {
@@ -270,50 +179,6 @@ window.CONFIG = {
       bgColor: {
         type: 'solid',
         color: '#1ccc5b'
-      },
-      textColor: '#000',
-      pinned: true
-    },
-    {
-      category: 'Social',
-      name: 'Discord',
-      icon: 'discord',
-      key: 'KeyD',
-      triggers: [
-        'd',
-        'dis',
-        'discord'
-      ],
-      url: 'https://discord.com/app',
-      normalisedURL: 'discord.com',
-      bgColor: {
-        type: 'solid',
-        color: '#5460e6'
-      },
-      textColor: '#fff',
-      pinned: true
-    },
-    {
-      category: 'Social',
-      name: 'Twitch',
-      icon: 'twitch',
-      url: 'https://twitch.tv',
-      normalisedURL: 'twitch.tv',
-      triggers: [
-        'tw',
-        'twitch',
-      ],
-      commands: {
-        search: {
-          template: '{@}/search?term={$}'
-        },
-        go: {
-          template: '{@}/{$}'
-        }
-      },
-      bgColor: {
-        type: 'solid',
-        color: '#8c44f7'
       },
       textColor: '#000',
       pinned: true
@@ -467,78 +332,6 @@ window.CONFIG = {
       },
       textColor: '#000',
       pinned: true
-    },
-    {
-      category: 'Education',
-      name: 'Wikipedia',
-      icon: 'wikipedia',
-      triggers: [
-        'wi',
-        'wiki',
-        'wikipedia'
-      ],
-      url: 'https://www.wikipedia.org',
-      normalisedURL: 'wikipedia.org',
-      commands: {
-        search: {
-          template: '{@}/?search={$}'
-        },
-        go: {
-          template: '{@}/wiki/{$}'
-        }
-      },
-      bgColor: {
-        type: 'gradient',
-        gradientType: 'linear',
-        colors: ['#e1e1e3', '#bbb'],
-        stops: [60, 100]
-      },
-      textColor: '#000',
-      pinned: true
-    },
-    {
-      category: 'Work',
-      name: 'Slack',
-      icon: 'slack',
-      triggers: [
-        'sl',
-        'slack'
-      ],
-      url: 'https://app.slack.com',
-      normalisedURL: 'slack.com',
-      bgColor: {
-        type: 'gradient',
-        gradientType: 'linear',
-        angle: -200,
-        colors: ['#d6abb9', '#e6d7b8', '#bce2eb', '#8db0a4']
-      },
-      textColor: '#00bd6d',
-    },
-    {
-      category: 'Social',
-      name: 'VK',
-      triggers: [
-        'v',
-        'vk',
-        'vkontakte',
-      ],
-      url: 'https://vk.com',
-      normalisedURL: 'vk.com',
-      commands: {
-        go: {
-          template: '{@}/{$}',
-          description: 'go to'
-        },
-        search: {
-          template: '{@}/search?c%5Bq%5D={$}&c%5Bsection%5D=auto'
-        }
-      },
-      bgColor: {
-        type: 'gradient',
-        gradientType: 'linear',
-        colors: ['#0077ff', '#0033ff']
-      },
-      textColor: '#e8e8e8'
     },
     {
       category: 'Search',
